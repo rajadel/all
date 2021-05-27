@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Library</title>
+		<meta  name="viewport" content="width=device-width,initial-scale=1.0">
+<style type="text/css">
+
+	*
+	{
+		box-sizing: border-box;
+	}
+	
+.box
+{
+	width:25%;
+	background-color:navy; 
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:12%;
+	opacity: 0.8;
+	border-radius: 10px;
+	height: 40%;
+}
+.c1
+{
+	border: none;
+	padding: 10px;
+	text-align: center;
+	
+
+}
+#id06
+{
+	text-align: center;
+ 
+	font-size: 20px; 
+	padding: 5px;
+	
+
+
+}
+a
+{
+	color: white;
+	text-decoration: none;
+}
+
+#log
+{
+	background-color: white;
+	border-radius: 20px;
+	border:none;
+	font-size: 15px;
+}
+#id01,#id02
+{
+	border: none;
+	border-radius: 10px;
+
+}
+a:hover
+{
+	text-decoration: underline;
+	font-style: italic;
+}
+#check
+{
+	display: inline-block;
+	color: white;
+	margin: -5px;
+	font-size: 20px;
+}
+p{
+	text-align: center; 
+	text-decoration: underline; 
+	font-size: 30px; 
+	padding: 3px;
+	color: white;
+}
+@media only screen and (max-width: 620px)
+{
+	#id01,#id02,p
+	{
+		width: 100%;
+		overflow: hidden;
+	}
+	
+	#check
+	{
+		font-size: 20px;
+	}
+	a
+	{
+		font-size: 20px;
+	}
+	.box
+	{
+		width: 50%;
+		margin-top:  45%;
+	}
+}
+
+</style>
+
+</head>
+<body background="C:\Users\beerappa\Downloads\eric-muhr-8zskmq_yL6Q-unsplash.jpg"  style="background-repeat: none; background-size: cover; opacity: 0.8; "> 
+<div class="box">    
+<form action="#" method="post" onsubmit="c()">
+		<p>LOGIN HERE</p>	
+	<div class="c1"><input type="text" name="name"  placeholder="username" autofocus="" id="id01" required="" ></div>
+	<div class="c1"><input type="password" name="name"   placeholder="password" id="id02" required="" ></div>
+	<div class="c1"><input type="checkbox" name="checkbox"  onclick="d()">
+		<h4 id="check" >Show password</h4></div>
+	<div class="c1" ><button  value="Login"  id="log">Login</button>
+	<input type="reset" name="value" value="Clear" id="log"></div>
+	
+
+	<div id="id06" ><a href="file:///C:/Users/beerappa/Desktop/myform.html"> Signup/</a>
+		<a href="file:///C:/Sublime%20Text%203/email.html" >forgot password</a>
+	
+</form>
+</div>
+<script type="text/javascript">
+	function c()
+	{
+		var n=document.getElementById("id01").value;
+		var p=document.getElementById("id02").value;
+		if(n=="raja")
+		{
+			if(p=="nani")
+			{
+				open("file:///C:/Sublime%20Text%203/git.html");
+	     	}
+	     	else
+		    {
+			alert("enter correct  password");
+		    }
+	    }
+	    else
+	    {
+	    	alert("enter correct username");
+	    }
+	    
+	}
+	function d() 
+	{
+		var x=document.getElementById("id02");
+		if (x.type==="password")
+		{
+			x.type="text";
+		}
+		else
+		{
+			x.type="password"
+		}
+
+	}
+
+		
+		
+</script>
+</body>
+</html>
